@@ -17,3 +17,7 @@
 该仓库是静态发布仓库。Release 内的 `gw-site.tar.gz` 包含可直接托管的 HTML、JavaScript、WASM、连接图与随包模型。Actions 校验归档 SHA-256 后解包，发布到 GitHub Pages。
 
 浏览器代码可在发布包内查看；数据来源清单在 `shared/data/manifest.json`，身体资产许可在 `shared/assets/flybody-LICENSE.txt`，Three.js 许可在 `shared/vendor/three/LICENSE`。连接图来自 https://male-cns.janelia.org/download/ 。
+
+## 0.4.1
+
+驾校和课堂按需加载约 22 MB 关键回路，驾驶模型就绪后才启用开车按钮。统一三个应用界面与模型默认朝向。新增课堂预训练读出：英语 512/512、语文 508/512、数学 378/379（各自留出考试）。本版本在基础发布包上应用 SHA-256 固定的增量包。已有用户请关闭全部 GW 页面后重开，以更新共享引擎。

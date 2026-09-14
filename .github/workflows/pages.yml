@@ -25,6 +25,9 @@ jobs:
           sha256sum -c gw-site.tar.gz.sha256
           mkdir site
           tar -xzf gw-site.tar.gz -C site
+          gh release download "$(cat PATCH)" --pattern gw-update.tar.gz
+          sha256sum -c gw-update.tar.gz.sha256
+          tar -xzf gw-update.tar.gz -C site
           test "$(cat site/society/initial-world.json)" = null
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
