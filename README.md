@@ -1,6 +1,6 @@
 # GW · 果蝇脑实验
 
-[打开 GW](https://ichendev.github.io/GW/)
+[打开 GW](https://blogs.idevlab.dev/GW/)
 
 蝇生、课堂与驾校共用 MaleCNS 连接图和 WebAssembly 内核。所有模拟、推理与训练在浏览器运行，数据保存在当前浏览器。关闭全部页面后暂停，重开继续。
 
