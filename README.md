@@ -1,0 +1,19 @@
+# GW · 果蝇脑实验
+
+[打开 GW](https://ichendev.github.io/GW/)
+
+蝇生、课堂与驾校共用 MaleCNS 连接图和 WebAssembly 内核。所有模拟、推理与训练在浏览器运行，数据保存在当前浏览器。关闭全部页面后暂停，重开继续。
+
+- 蝇生：创建自主果蝇，观察与有限干预。
+- 课堂：数学、语文、英语的读出训练与考试。
+- 驾校：五项科目二模拟、3D 果蝇、神经活动与训练进度。
+
+首次打开需要下载大型脑数据；建议使用现代桌面浏览器。完整 LIF 是独立探针，日常任务使用率模型与核心回路。三维布局和学习机制是工程近似，不代表复原真实生物行为。
+
+公开版本从空白世界开始，不包含开发者的本机存档。请勿清除浏览器站点数据，除非已保存所需记录。
+
+## 发布
+
+该仓库是静态发布仓库。Release 内的 `gw-site.tar.gz` 包含可直接托管的 HTML、JavaScript、WASM、连接图与随包模型。Actions 校验归档 SHA-256 后解包，发布到 GitHub Pages。
+
+浏览器代码可在发布包内查看；数据来源清单在 `shared/data/manifest.json`，身体资产许可在 `shared/assets/flybody-LICENSE.txt`，Three.js 许可在 `shared/vendor/three/LICENSE`。连接图来自 https://male-cns.janelia.org/download/ 。
