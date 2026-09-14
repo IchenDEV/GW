@@ -21,7 +21,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release download "$(cat RELEASE)" --pattern gw-site.tar.gz --pattern gw-site.tar.gz.sha256
+          gh release download "$(cat RELEASE)" --pattern gw-site.tar.gz
           sha256sum -c gw-site.tar.gz.sha256
           mkdir site
           tar -xzf gw-site.tar.gz -C site
